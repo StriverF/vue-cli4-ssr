@@ -1,5 +1,5 @@
 # vue-cli4-ssr
-Vue-cli4 同构SSR项目 支持SSR开发模式热加载，支持引入第三方组件库及第三方css(本项目以Vant组件库为例)，支持PWA
+Vue-cli4 同构SSR项目 支持SSR开发模式热加载，支持引入第三方组件库及第三方css(本项目以[Vant组件库](https://youzan.github.io/vant/#/zh-CN/home)为例)，支持PWA
 ![](https://cdn.patpat.site/mweb/15935816357913.jpg)
 
 ## Project setup
@@ -39,7 +39,7 @@ plugins: [
 ]
 ```
 
-Vant官方文档里面配置有 "libraryDirectory": "es" 这个配置会把引入包文件目录指向es目录，es目录下的导入css用的 import 'xxx.css' 这个语法在SSR服务端会报错。
+[Vant官方文档](https://youzan.github.io/vant/#/zh-CN/quickstart#yin-ru-zu-jian)里面配置有 "libraryDirectory": "es" 这个配置会把引入包文件目录指向es目录，es目录下的导入css用的 import 'xxx.css' 这个语法在SSR服务端会报错。
 报错内容：
 ![](https://cdn.patpat.site/mweb/15935744382041.jpg)
 把"libraryDirectory": "es",注释掉，libraryDirectory默认值会是lib目录。lib目录导入css用的是 `require('../../style/base.css');` 这样在node服务端就不会报错了。
