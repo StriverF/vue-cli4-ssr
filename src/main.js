@@ -3,13 +3,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import createRouter from './router'
 import createStore from './store'
-// import { Sticky } from 'vant';
-// import patpatUi from 'patpat-ui'
+// import { Sticky } from 'vant'
 
 Vue.config.productionTip = false
 
-// Vue.use(patpatUi)
-// Vue.use(Sticky)
+// Vue.use(Sticky) // 可以在main.js中全局按需引入，也可以在对应子组件中按需引入
 
 export const createApp = (context) => {
   // create router and store instances

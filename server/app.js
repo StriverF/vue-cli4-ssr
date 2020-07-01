@@ -52,7 +52,7 @@ const render = (req, res) => {
   }
 
   const context = {
-    title: 'PatPat Website SSR', // default title
+    title: 'Vue CLI4 SSR', // default title
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {
@@ -74,8 +74,8 @@ app.get('*', isDev ? renderDev : render)
 
 
 if (protocol === 'https') {
-  let privateKey = fs.readFileSync('./server/cert/patpat.site+6-key.pem', 'utf8')
-  let certificate = fs.readFileSync('./server/cert/patpat.site+6.pem', 'utf8')
+  let privateKey = fs.readFileSync('./server/cert/dev.com+6-key.pem', 'utf8')
+  let certificate = fs.readFileSync('./server/cert/dev.com+6.pem', 'utf8')
   let credentials = { key: privateKey, cert: certificate }
   require(protocol).createServer(credentials, app).listen(port, () => console.log(`\n\n\x1b[42;30m 服务启动成功： \x1b[40;32m ${protocol}://localhost:${port}\x1b[0m\n`))
 } else {

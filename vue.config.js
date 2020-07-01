@@ -46,7 +46,7 @@ module.exports = {
         /js\/vendor.[0-9A-Za-z]{8,8}.js$/,
         /css\/main.[0-9A-Za-z]{8,8}.css$/
       ],
-      cacheId: 'patpat-sw-cache'
+      cacheId: 'vue-cli4-ssr-sw-cache'
     }
   },
 }

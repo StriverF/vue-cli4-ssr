@@ -1,5 +1,4 @@
 import { createApp } from './main'
-// import 'patpat-ui/lib/patpat-ui.css'
 import './registerServiceWorker'
 
 const { app, router, store } = createApp()
