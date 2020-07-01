@@ -34,11 +34,11 @@ module.exports = {
     }
   },
   pwa: {
-    name: 'PatPat',
+    name: 'vue cli4 ssr',
     themeColor: '#ff2556',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
     workboxOptions: {
-      swDest: 'patpat-sw.js',
+      swDest: 'vue-cli4-ssr-sw.js',
       skipWaiting: true,
       clientsClaim: true,
       include: [
