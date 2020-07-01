@@ -54,6 +54,11 @@ PROTOCOL=http
 LOG_LEVEL=silent
 ```
 
+### 本地Https环境
+本地https证书安全环境配置，在`server`目录下面新增cert文件夹，并把生成的证书放在里面（本地生成免费安全证书可以用[mkcert](https://github.com/FiloSottile/mkcert), [mkcert](https://github.com/FiloSottile/mkcert)是用[golang](https://golang.org/)编写的证书生成工具）
+
+再就是.env配置`PROTOCOL=https`,检查server/app.js里面的引入privateKey&certificate文件路径和文件名是否正确
+
 ### Run your end-to-end tests
 ```
 npm run test:e2e
