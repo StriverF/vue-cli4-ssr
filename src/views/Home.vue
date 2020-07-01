@@ -27,13 +27,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.my-swipe .van-swipe-item {
-  margin-top: 20px;
+.my-swipe {
   margin-bottom: 20px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 350px;
-  text-align: center;
-  background-color: #39a9ed;
+  .van-swipe-item {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 350px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
 }
 </style>
