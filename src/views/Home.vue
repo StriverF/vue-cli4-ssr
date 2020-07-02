@@ -9,6 +9,7 @@
       <SwipeItem>3</SwipeItem>
       <SwipeItem>4</SwipeItem>
     </Swipe>
+    <Rate v-model="value"></Rate>
   </div>
 </template>
 
@@ -16,13 +17,20 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import { Button, Swipe, SwipeItem} from 'vant'
+import { Rate } from 'ant-design-vue'
 // import 'vant/lib/button/index.css'
+import 'ant-design-vue/lib/rate/style/index.css'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld, Button, Swipe, SwipeItem
-  }
+    HelloWorld, Button, Swipe, SwipeItem, Rate
+  },
+  data() {
+    return {
+      value: 3
+    }
+  },
 }
 </script>
 
