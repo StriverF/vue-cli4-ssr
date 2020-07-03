@@ -12,7 +12,7 @@ module.exports = {
     libraryTarget: 'commonjs2',
   },
   externals: nodeExternals({
-    whitelist: [/\.css$/, /vant\/lib/],
+    whitelist: [/\.css$/, /vant\/lib/, /ant-design-vue\/lib/],
   }),
   optimization: {
     splitChunks: false,

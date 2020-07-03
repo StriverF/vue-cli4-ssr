@@ -27,7 +27,14 @@ npm run start
 注意部署环境配置.env文件，.env文件添加 .gitignore
 
 ### Vant 组件库按需加载主要配置
-项目根目录文件babel.config.js配置如下
+1. 配置服务端webpack配置
+```
+  externals: nodeExternals({
+    whitelist: [/\.css$/, /vant\/lib/],
+  }),
+```
+
+2. 项目根目录文件babel.config.js配置如下
 
 ```
 plugins: [

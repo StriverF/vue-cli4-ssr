@@ -19,7 +19,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 import { Button, Swipe, SwipeItem} from 'vant'
 import { Rate } from 'ant-design-vue'
 // import 'vant/lib/button/index.css'
-import 'ant-design-vue/lib/rate/style/index.css'
+// import 'ant-design-vue/lib/rate/style/index.css'
 
 export default {
   name: 'Home',

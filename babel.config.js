@@ -8,20 +8,16 @@ module.exports = {
     //   // "libraryDirectory": "es",
     //   "style": true
     // }, 'vant'],
-    // ["import", {
-    //   "libraryName": "ant-design-vue",
-    //   // "libraryDirectory": "es",
-    //   "style": true
-    // }, 'ant-design-vue']
-    [
-      'import',
-      {
-        libraryName: 'vant',
-        style: (name) => {
-          return `${name}/style/less.js`
-        },
+    ['import', {
+      libraryName: 'vant',
+      style: (name) => {
+        return `${name}/style/less.js`
       },
-      'vant',
-    ],
+    },'vant',],
+    ["import", {
+      "libraryName": "ant-design-vue",
+      "style": true
+    }, 'ant-design-vue'],
+    
   ]
 }
