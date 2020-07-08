@@ -35,6 +35,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
+// @import '~vant/lib/style/base.css';
+// @import '~vant/lib/button/index.css';
+.home {
+  color: aqua;
+}
 .my-swipe {
   margin-bottom: 20px;
   .van-swipe-item {
